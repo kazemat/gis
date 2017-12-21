@@ -25,8 +25,7 @@ SECRET_KEY = 'e3f_l*i!nfv)6b1r!i6aln&=7n49)$=f54n#x+bl412p2a6y-@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1',
-                 'terrascan.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -120,6 +119,7 @@ USE_TZ = True
 
 TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'), os.path.join(BASE_DIR, 'converter', 'templates'))
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(
