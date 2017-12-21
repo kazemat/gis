@@ -1,5 +1,6 @@
 django>=2.0.0
 whitenoise
+gunicorn
 markdown>=2.1.0
 django-filter>=1.0.1
 djangorestframework>=3.7.0
